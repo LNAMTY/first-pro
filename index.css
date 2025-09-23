@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .nav {
@@ -38,4 +39,45 @@ h1 {
 
 h2 {
     color: #97BCC7;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.text, .img {
+  flex: 1;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.img {
+  color: #97BCC7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img img {
+  position: absolute; /* overlap */
+  width: 250px;
+  height: 250px;
+  border-radius: 70%;
+  opacity: 0.8;
+  z-index: 2; /* make sure it's above text */
+}
+
+pre {
+
+}
+
+code {
+    font-size: 10px;
 }
