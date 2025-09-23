@@ -38,6 +38,7 @@ a:hover {
   color: #053D57;
 }
 
+/* using h1 for both home and about me */
 h1 {
     color: #ffffff;
 }
@@ -46,6 +47,7 @@ h2 {
     color: #97BCC7;
 }
 
+/* I am using main for both home and about me */
 main {
     display: flex;
     height: 100vh;
@@ -86,4 +88,30 @@ pre {
 code {
     color: #97BCC7 ;
     opacity: 0.2;
+}
+
+/* About me */
+
+.abtext, .abimg {
+  flex: 1;
+}
+
+.abtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  
+}
+
+.abimg {
+ 
+}
+
+p {
+  color: #97BCC7;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
