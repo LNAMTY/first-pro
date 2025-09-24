@@ -97,6 +97,7 @@ code {
 
 /* About me */
 
+
 .abtext, .abimg {
   flex: 1;
 }
@@ -263,4 +264,8 @@ button:hover {
   align-items: left;
   justify-content: center;
   gap: 15px;
+}
+
+.input::placeholder {
+ text-align: center;
 }
