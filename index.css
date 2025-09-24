@@ -48,7 +48,7 @@ h2 {
     color: #97BCC7;
 }
 
-/* I am using main for all four pages */
+/* I am using main for the first 3 pages */
 main {
     display: flex;
     height: 100vh;
@@ -175,6 +175,7 @@ p {
 .main-con {
   display: flex;
   flex-direction: row;
+  height: 80vh;
 }
 
 .conimg,.context {
@@ -268,4 +269,8 @@ button:hover {
 
 .input::placeholder {
  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
