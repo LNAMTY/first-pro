@@ -219,7 +219,7 @@ input {
 #name,#email {
   height: 35px;
   width: 350px;
-   border-radius: 10px;
+  border-radius: 10px;
 }
 
 #message {
