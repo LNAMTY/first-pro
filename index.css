@@ -12,12 +12,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 30px;
-    margin: 40px;
+    margin: 40px 40px 0 40px;
     color: #97BCC7;
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    padding: 2px;
+    
 }
 
 
@@ -48,7 +48,7 @@ h2 {
     color: #97BCC7;
 }
 
-/* I am using main for both home and about me */
+/* I am using main for all four pages */
 main {
     display: flex;
     height: 100vh;
@@ -77,10 +77,12 @@ main {
 
 .img img {
   position: absolute; /* overlap */
-  width: 275px;
-  height: 275px;
+  top: 200px;
+
+  width: 250px;
+  height: 250px;
   border-radius: 70%;
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: 2; /* make sure it's above text */
 }
 
@@ -123,4 +125,142 @@ p {
 
 .skills-header {
  padding: 20px;
+ font-size: 60px;
+}
+
+.sktext, .skimg {
+  flex: 1;
+}
+
+.sktext {
+  
+}
+
+.skimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 40px 0;
+}
+
+.download-resume {
+  background-color: #97BCC7;
+  color: #03141D;
+  height: 20px;
+  width: 150px;
+  border: 0;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.download-resume:hover {
+  color: white;
+}
+
+.skimg img {
+  height: 70vh;
+  width: 400px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+/* contact me */
+
+.main-con {
+  display: flex;
+  flex-direction: row;
+}
+
+.conimg,.context {
+  flex: 1;
+}
+
+.contact-header {
+ padding: 20px;
+ font-size: 60px;
+}
+
+.context,.conimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.context {
+  margin-bottom: 40px;
+}
+
+label {
+    color: #97BCC7;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+input {
+    background-color: #97BCC7;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+   
+}
+
+#name,#email {
+  height: 35px;
+  width: 350px;
+   border-radius: 10px;
+}
+
+#message {
+  height: 100px;
+  width: 350px;
+  border-radius: 15px;
+}
+
+button {
+  color: #03141D;
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 25px;
+  width: 60px;
+  border: 0;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #97BCC7;
+}
+
+.email,.git,.link {
+  background-color: #97BCC7;
+  color: #ffffff;
+  height: 25px;
+  width: 300px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inner-con {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 15px;
 }
